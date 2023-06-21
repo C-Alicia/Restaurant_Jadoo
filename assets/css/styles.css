@@ -1,0 +1,778 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* body {
+    margin: 0;
+}
+ */
+/* header (nav + banner)  */
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: fixed;
+    z-index: 10;
+}
+
+.bg-dark {
+    background-color: white !important;
+}
+
+#banner {
+    background-image: url('../img/illustration_principale.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.bannerContainer {
+    margin-left: 100px;
+    width: 500px;
+    padding: 50px 0 40px 0;
+}
+
+.bannerContainer span {
+    color: #df6951;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 10vw;
+    text-transform: uppercase;
+}
+
+.titlePrincipal {
+    color: white;
+    font-family: 'Volkhov', serif;
+    font-size: 5vw;
+    margin: 15px 0px 10px 0px;
+    background-image: url("../img/souligne_rose.svg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+.bannerContainer p {
+    color: #bfc0cd;
+    font-family: 'Poppins', sans-serif;
+}
+
+#banner>.bannerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    width: 60%;
+    padding-left: 7em;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+.buttonDiscover {
+    border-radius: 0.5em;
+    padding: 0.8em;
+    background-color: #f1a501;
+    color: white;
+    font-size: 18px;
+    border: 0px solid #f1a501;
+    transition: ease-in .2s;
+    box-shadow: #f1a501;
+}
+
+.bannerContainer button:hover {
+    transform: scale(1.1)
+        /*aggrandit le boutton au hover de 0.1 fois en 0.2s (définit dans la propriété transition au dessus */
+}
+
+/* Partie decouverte */
+
+/*Début deuxième section*/
+
+#discoveryFood {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 4em;
+    background-image: url("../img/decor_1.svg");
+    background-repeat: no-repeat;
+    background-position: top right 2em;
+}
+
+#discoveryFood * {
+    text-align: center;
+}
+
+#discoveryFood>span {
+    opacity: 0.8;
+    color: #5e6282;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#discoveryFood article {
+    margin: 0 3em 0 3em;
+}
+
+h2 {
+    color: #14183e;
+    font-size: 3em;
+    font-family: 'Volkhov', serif;
+}
+
+.platsContainer {
+    display: flex;
+}
+
+.platsContainer article {
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    background-color: white;
+    border-radius: 30px;
+}
+
+.platsContainer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.platsContainer img {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+.platsContainer p {
+    color: #5E6282;
+    font-weight: 700;
+}
+
+article>img {
+    border-radius: 2em;
+    width: 100%;
+}
+
+.sushiContainer {
+    display: flex;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.sushiContainer article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2em;
+    transition: ease-in .2s;
+}
+
+.articleSushi:hover {
+
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 24px;
+    background-color: white;
+}
+
+.container-sushi img {
+    width: 100%;
+}
+
+.sushiContainer h3 {
+    color: #1E1D4C;
+}
+
+.sushiContainer span {
+    color: #5E6282;
+}
+
+/*Fin second section */
+
+/* Partie information du restaurant */
+
+#informationContainer {
+    background-image: url("../img/illustration_chef.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 4em;
+}
+
+#informationContainer>div {
+    padding-top: 5vh;
+}
+
+#informationContainer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    width: 50%;
+    padding-left: 7em;
+    height: 100% !important;
+}
+
+#imageContainer {
+    padding: 0;
+}
+
+#informationContainer p {
+    color: white;
+    width: 50%;
+    line-height: 1.7;
+}
+
+#informationContainer h2 {
+    color: white;
+    font-family: 'Volkhov', serif;
+    font-size: 5vw;
+    margin: 15px 0px 10px 0px;
+}
+
+#informationContainer img {
+    height: 150px;
+    width: auto;
+}
+
+.imgContainerWrapper {
+    display: block !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin-top: 5vh;
+}
+
+.imgWrapper {
+    height: 60vh !important;
+    width: auto !important;
+}
+
+/* Partie commander */
+
+#commander {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/illustration_commander.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#commander>div {
+    padding-top: 5vh;
+    font-size: 18px;
+    padding-left: 5vh;
+    margin-bottom: 2em;
+}
+
+#commander .buttonDiscover {
+    align-self: center;
+    margin-top: 2em;
+}
+
+#commander h3 {
+    font-size: 3vw;
+}
+
+h3>span {
+    color: #DF6951;
+}
+
+#commander img {
+    width: 70px;
+    height: 70px;
+}
+
+#commander h4 {
+    color: #22232C;
+    margin-bottom: 1em;
+}
+
+.deliveryContainer span {
+    color: #3E3F43;
+}
+
+.deliveryContainer {
+    display: flex;
+    align-items: center;
+}
+
+.deliveryContainer div {
+    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#commander .buttonDiscover {
+    width: 12%;
+}
+
+/* Partie formulaire */
+
+#contactMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contactMe>span {
+    margin-top: 5vh;
+    color: #5E6282;
+    font-weight: 700;
+    text-align: center;
+    font-size: 18px;
+}
+
+#contactMe>h3 {
+    text-align: center;
+    color: #14183E;
+    font-size: 3vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #E2E4E5;
+    border-radius: 30px 0px 0px 30px;
+    padding-left: 2em;
+    flex-basis: 70%;
+    margin-bottom: 3em;
+    padding-bottom: 1.5em;
+}
+
+form div {
+    display: flex;
+}
+
+form p {
+    color: #8D8D8D;
+}
+
+form .containerInputName,
+.containerInputFirstName {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.formImgContainer {
+    display: flex;
+}
+
+.containerImg {
+    width: 50%;
+}
+
+.containerImg>img {
+    height: 56vh;
+    width: auto;
+    border-radius: 0px 30px 30px 0px;
+}
+
+label {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    content: "\2713";
+}
+
+input {
+    border-top: 0px solid #E2E4E5;
+    border-right: 0px solid #E2E4E5;
+    border-bottom: 1px solid #E2E4E5;
+    border-left: 0px solid #E2E4E5;
+    width: 90%;
+}
+
+.inputWidth {
+    width: 80%;
+}
+
+#inputMessage {
+    margin-bottom: 2em;
+}
+
+#inputSubmit {
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #007AFF;
+    color: white;
+    border-radius: 4px;
+    content: "\2713";
+    width: 40%;
+}
+
+/* Partie Footer */
+
+.main-logo {
+    width: 30px;
+    height: 30px;
+    margin-left: 1em;
+}
+
+footer {
+    background-color: #F3F3F3;
+    display: flex;
+    height: 30vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer>.container-logo__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 30%;
+}
+
+.container-restaurant__footer,
+.container-contact__footer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container-restaurant__footer>* {
+    padding-bottom: 1em;
+}
+
+h5 {
+    margin-right: 2em;
+    font-size: 1.1em;
+    padding: 0;
+}
+
+footer p,
+span {
+    color: #5E6282;
+}
+
+.container-ubereats__footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-ubereats__footer>img {
+    height: 5vh;
+    width: auto;
+}
+
+.container-ubereats__footer div {
+    display: flex;
+}
+
+.btn-footer {
+    background-color: #080809;
+    border-radius: 17.5px;
+    color: white;
+    padding: 0.7em 1.2em 0.7em 1.2em;
+    margin: 0 0.2em 0 0.2em;
+}
+
+.btn-footer img {
+    height: 2vh;
+    width: auto;
+}
+
+.container-ubereats__footer span {
+    margin: 2em 0 2em 0;
+    text-align: center;
+}
+
+.copyright {
+    display: flex;
+    padding: 2em 0 1em 0;
+    background-color: #F3F3F3;
+    justify-content: center;
+}
+
+.container-resto-contact__footer-mobile {
+    display: flex;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1024px) {
+
+    #banner,
+    .platsContainer,
+    .sushiContainer,
+    #informationContainer div,
+    #contactMe,
+    .formImgContainer,
+    .sushiContainer>article {
+        display: block;
+    }
+
+    main {
+        overflow-x: hidden;
+    }
+
+    /* nav + banner */
+    #banner {
+        height: 80vh;
+    }
+
+    .titlePrincipal {
+        text-align: center;
+        width: 100%;
+        background-image: none;
+    }
+
+    #banner>.bannerContainer {
+        padding: 65px;
+        text-align: center;
+    }
+
+    .bannerContainer p {
+        color: #E6E8F3;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    .bannerContainer span {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .buttonDiscover {
+        margin: 0 auto 0 auto;
+    }
+
+    /* nouveautés de plat */
+
+    #discoveryFood article {
+        margin: 0;
+    }
+
+    .item-sushi {
+        margin-left: 20px;
+        display: inline-block;
+        width: 60%;
+    }
+
+    .articleSushi img {
+        width: 30%;
+    }
+
+
+    .sushiContainer {
+        width: 80%;
+        text-align: center;
+    }
+
+    .sushiContainer img {
+        width: 30%;
+    }
+
+    .sushiContainer * {
+        text-align: initial !important;
+    }
+
+    /* partie information restaurant */
+
+    #informationContainer img {
+        object-fit: contain;
+    }
+
+
+    .icon-one {
+        display: block;
+    }
+
+    .imgWrapper {
+        display: none;
+    }
+
+    /*  h1 {
+        font-size: 45px;
+    }
+ */
+    /*    .container-img > img {
+        height: 35vh;
+    }
+ */
+    #informationContainer {
+        background-size: cover;
+    }
+
+    #informationContainer p {
+        width: auto;
+    }
+
+    #informationContainer>div {
+        padding: 0;
+        margin-left: 0 !important
+    }
+
+    #informationContainer div {
+        width: 100%;
+    }
+
+    #imageContainer>img {
+        object-fit: fill;
+    }
+
+    .opacity-0-mobile {
+        opacity: 0;
+    }
+
+    /* Partie commander */
+
+    #commander .buttonDiscover {
+        width: auto;
+        position: absolute;
+        right: 30%;
+        text-align: center;
+        margin: 0 auto 0 auto;
+    }
+
+    #commander {
+        background-image: none;
+        height: 100vh;
+    }
+
+    #commander h3 {
+        text-align: center;
+        font-size: 36px;
+    }
+
+    #commander>div {
+        padding: 0;
+    }
+
+    #commander>div>span {
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .deliveryContainer {
+        padding-left: 2em;
+        padding-right: 2em;
+        margin-bottom: 2em;
+    }
+
+    /* partie contact */
+
+    #contactMe>span {
+        display: block;
+        text-align: center;
+        font-size: 23px;
+    }
+
+    #contactMe h3 {
+        font-size: 36px;
+        height: 3vh;
+    }
+
+    form {
+        border: none;
+        padding-left: 1em;
+    }
+
+    form div {
+        display: block;
+    }
+
+    #contactMe h4 {
+        margin-top: 1em;
+        text-align: center;
+    }
+
+    .d-none-mobile {
+        display: none;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .formImgContainer p {
+        font-size: 18px;
+    }
+
+    label {
+        margin: 0 !important;
+    }
+
+    input {
+        margin: 1.5em 0 0.5em 0;
+    }
+
+    #inputSubmit {
+        margin: 0 auto;
+    }
+
+    footer {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .container-logo__footer {
+        order: 3;
+    }
+
+    .container-resto-contact__footer-mobile {
+        display: flex;
+        margin-bottom: 1em;
+    }
+
+    .container-ubereats__footer {
+        margin: 1em 0 1em 0;
+    }
+
+    h5 {
+        font-size: 21px;
+        font-weight: bold;
+    }
+
+    .container-logo__footer {
+        background-color: white;
+        width: 100%;
+    }
+
+    .main-logo {
+        width: 5vw;
+        height: auto;
+        margin-right: 1em;
+    }
+
+    header div {
+        flex-basis: 55%
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
